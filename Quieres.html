@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Novia</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: #E4C0DC;
+        }
+
+        .bottom_si {
+            width: 45px;
+            height: 45px;
+        }
+
+        .bottom_no {
+            width: 45px;
+            height: 45px;
+        }
+
+        .Text {
+            padding: 25px 25px
+            
+        }
+
+        .Text {
+            color: #161315;
+            font-size: xx-large;
+        }
+
+        .main .articles {
+    width: none;
+    margin-right: none;
+    float: right;
+}
+
+.main .articles article {
+    padding: none;
+    /*color de los articulos*/
+    margin-bottom: 20px;
+}
+
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('ahora ya somos novios ♥ <3' );
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h3 class ="Text" >Quieres ser mi novia?</h3>
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" class="bottom_si" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" class="bottom_no"/>
+    <img src="waifu.png" width="500">
+
+    <section class="main">
+        <section class="articles">
+            <article>
+    <img src="imagenes/waifu2.png" width="330" align ="
+    right" />
+    </article>
+    </section>
+</body>
+</html>
